@@ -2,7 +2,7 @@
 FOLDER=${PWD##*/};
 README="README.md";
 GITIGNORE=".gitignore";
-curl -u 'fremin33' https://api.github.com/user/repos -d "{\"name\":\"${FOLDER}\"}";
+curl -u 'username' https://api.github.com/user/repos -d "{\"name\":\"${FOLDER}\"}";
 git init;
 git remote add origin git@github.com:fremin33/${FOLDER}.git;
 
