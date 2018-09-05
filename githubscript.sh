@@ -4,7 +4,7 @@ README="README.md";
 GITIGNORE=".gitignore";
 curl -u 'username' https://api.github.com/user/repos -d "{\"name\":\"${FOLDER}\"}";
 git init;
-git remote add origin git@github.com:fremin33/${FOLDER}.git;
+git remote add origin git@github.com:username/${FOLDER}.git;
 
 if [ ! -e "${README}" ]; then
  echo "# Readme.md" >> README.md;
